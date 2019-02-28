@@ -8,13 +8,21 @@
 </head>
 <body>
     <script>
+        var Dan=new Object();
+        Dan.height=185;
+        Dan.age=23;
+        Dan.eyeColor='blue';
+        // 开始序列化
+        output=JSON.stringify(Dan);
+        document.writeln(output);
+
         var marry='{"Name":"Zhaoguoqing","height":"169"}';
-        var myObject=JSON.parse(marry);
+        var myObject=JSON.parse(output);
         var out="";
         for(i in myObject){
             out+=i+"="+myObject[i]+"\n";
         }
-        alert(out);
+        document.writeln(out);
         
         </script>
 </body>
