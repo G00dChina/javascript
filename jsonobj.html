@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>JsonObject</title>
+
+    <script>
+        var booklistObject={
+             "booklist":[
+                 {"title":"Foundation","author":"ISSct Asimov"},      
+                 {"title":"WebDev","author":"Zhaoguoqing"},      
+                 {"title":"IMT","author":"Program"}       
+                        ]
+                         }
+        
+        var out="";
+        var books=booklistObject.booklist;
+        for(var i=0;i<books.length;i++){
+            var booknumber=i+1;
+            out+="Book"+booknumber+" is "+books[i].title+" by "+books[i].author+"\n";
+        }
+        </script>
+
+</head>
+ <body onload="alert(out)">
+</body>
+</html>
