@@ -6,28 +6,28 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>JS set Cookie</title>
 
-    <script>
-        function createCookie(name,value,days,path,domain,secure)
-        {
-    if(days){
-            var date=new Date();
-            date.setTime(date.getTime()+(days*24*60*60*1000));
-            var expires=date.toGMTString();
-            }
-    else
-          {
-            var expires="";
-            cookieString=name+"="+escape(value);
-            if(expires)cookieString+=";expires="+expires;
-            if(path)cookieString+=";path="+escape(path);
-            if(domain)cookieString+=";domain="+escape(domain);
-            if(secure)cookieString+=";secure";
-            document.cookie=cookieString;
-          }
+    <script type="text/javascript">
+            function createCookie(name,value,days,path,domain,secure)
+            {
+              if(days){
+                      var date=new Date();
+                      date.setTime(date.getTime()+(days*24*60*60*1000));
+                      var expires=date.toGMTString();
+                      }
+              else
+                    
+                      var expires="";
+                      cookieString=name+"="+escape(value);
+                      if(expires)cookieString+=";expires="+expires;
+                      if(path)cookieString+=";path="+escape(path);
+                      if(domain)cookieString+=";domain="+escape(domain);
+                      if(secure)cookieString+=";secure";
+                      document.cookie=cookieString;
+              }
           createCookie("username","Sam  jones",5);
           createCookie("location","china",5);
           createCookie("status","fullmember",5);
-        }
+       
          </script>
 </head>
 <body>
